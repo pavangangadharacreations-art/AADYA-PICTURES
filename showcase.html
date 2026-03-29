@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vertical Movie Showcase</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>🎬 Vertical Movie Showcase</h2>
+    <nav>
+    <a href="showcase.html">Showcase</a>
+    <a href="actors.html">Actors</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="about.html">About</a>
+    </nav>
+</header>
+
+
+
+
+<section class="movie-slider">
+
+    <div class="movie-slider-container" id="slider1">
+
+        <!-- Slide 1 -->
+        <div class="movie-slide slide-one">
+            <div class="overlay"></div>
+
+            <div class="slide-content">
+                <h1>Synopsis</h1>
+
+                <!-- <h3>Synopsis</h3> -->
+
+                    <p class="description">
+                        Three orphaned boys grow up together, forming an unbreakable brotherhood. 
+                        One day, they meet a kind-hearted girl who soon becomes like a sister to them. 
+                        As her marriage approaches, the boys struggle to earn money in a short term and are drawn into the dangerous gang. 
+                        When a powerful gang leader falsely accuses their sister, the brothers are forced into a violent confrontation. 
+                        In a tragic turn of events, the gang leader is killed—now his influential father seeks revenge, setting the stage for a gripping battle of loyalty, justice, and survival.
+
+                        On the run and hideouts.
+                        System vs survival.
+                        Questions raised:
+                        Will police catch them?
+                        Will gang kill them?
+                        Will they surrender?
+                        Are they criminals… or victims?
+
+                        “Every move in life is a gamble…
+                        But some gambles cost everything.”
+                        👉 PAGADE
+
+
+                    </p>
+
+                <div class="action-buttons">
+                    <button onclick="likeMovie()">👍</button>
+                    <button onclick="loveMovie()">❤️</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="movie-slide slide-two">
+            <div class="overlay"></div>
+
+            <div class="slide-content">
+                 <h3>Stills</h3>
+
+                <p class="description">
+                    Iconic stills showcasing the most intense and memorable moments of the journey.
+                </p>
+
+
+                <div class="stills">
+                    <img src="static/New folder/1.webp">
+                    <img src="static/New folder/2.webp">
+                    <img src="static/New folder/3.webp">
+                    <img src="static/New folder/4.webp">
+                    <img src="static/New folder/5.webp">
+                    <img src="static/New folder/6.webp">
+                    <img src="static/New folder/7.webp">
+                    <img src="static/New folder/8.webp">
+                    <img src="static/New folder/9.webp">
+                    <img src="static/New folder/10.webp">
+                    <img src="static/New folder/11.webp">
+                    <img src="static/New folder/12.webp">
+                </div>
+
+                <div class="action-buttons">
+                    <button onclick="likeMovie()">❤️</button>
+
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="movie-slide slide-three">
+            <div class="overlay"></div>
+
+            <div class="slide-content">
+                <h1>cinematic palette</h1>
+                <div class="meta">Brown/Green</div>
+
+                <p class="description">
+                    Inspired by earthy brown and deep green tones, the design reflects a grounded yet cinematic experience.
+                    This palette creates a natural, immersive atmosphere aligned with the movie’s emotional depth.
+                </p>
+
+                <div class="stills">
+                    <img src="static/actors/cp.webp">
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="movie-slide slide-four">
+            <div class="overlay"></div>
+
+            <div class="slide-content">
+                <h1>artist (cast) names</h1>
+
+                <p class="description">
+                    Cast includes well-known Kannada actors delivering powerful roles.
+                </p>
+                <a href="actors.html" class="more-btn">More Info</a>
+            </div>
+        </div>
+
+        <div class="movie-slide slide-four">
+            <div class="overlay"></div>
+
+            <div class="slide-content">
+                <h1>Cast & Crew </h1>
+
+                <p class="description">
+                    Cast and crew work together to bring the story to life with strong performances and direction.
+                </p>
+                <a href="gallery.html" class="more-btn">More Info</a>
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <!-- Controls -->
+    <button class="slider-prev" onclick="prevSlide(1)">▲</button>
+    <button class="slider-next" onclick="nextSlide(1)">▼</button>
+
+</section>
+
+
+
+<section class="slider-section">
+    <div class="slider-container" id="slider2">
+
+        
+
+        <div class="slide active">
+            <img src="static/slide1.webp" alt="Inception">
+            <div class="slide-info">
+                <h3>Inception</h3>
+                <p>A mind-bending thriller by Christopher Nolan</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="static/slide2.webp" alt="Avengers">
+            <div class="slide-info">
+                <h3>Avengers: Endgame</h3>
+                <p>The ultimate superhero showdown</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="static/slide3.webp" alt="Interstellar">
+            <div class="slide-info">
+                <h3>Interstellar</h3>
+                <p>Epic space exploration journey</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="static/slide4.webp" alt="Joker">
+            <div class="slide-info">
+                <h3>Joker</h3>
+                <p>The dark story of Gotham's infamous villain</p>
+            </div>
+        </div>
+
+                <div class="slide">
+            <img src="static/slide5.webp" alt="Joker">
+            <div class="slide-info">
+                <h3>Joker</h3>
+                <p>The dark story of Gotham's infamous villain</p>
+            </div>
+        </div>
+
+
+                <div class="slide">
+            <img src="static/slide6.webp" alt="Joker">
+            <div class="slide-info">
+                <h3>Joker</h3>
+                <p>The dark story of Gotham's infamous villain</p>
+            </div>
+        </div>
+
+
+                <div class="slide">
+            <img src="static/slide7.webp" alt="Joker">
+            <div class="slide-info">
+                <h3>Joker</h3>
+                <p>The dark story of Gotham's infamous villain</p>
+            </div>
+        </div>
+
+
+                <div class="slide">
+            <img src="static/slide8.webp" alt="Joker">
+            <div class="slide-info">
+                <h3>Joker</h3>
+                <p>The dark story of Gotham's infamous villain</p>
+            </div>
+        </div>
+
+
+                <div class="slide">
+            <img src="static/slide9.webp" alt="Joker">
+            <div class="slide-info">
+                <h3>Joker</h3>
+                <p>The dark story of Gotham's infamous villain</p>
+            </div>
+        </div>
+
+
+                <div class="slide">
+            <img src="static/slide10.webp" alt="Joker">
+            <div class="slide-info">
+                <h3>Joker</h3>
+                <p>The dark story of Gotham's infamous villain</p>
+            </div>
+        </div>
+
+
+                <div class="slide">
+            <img src="static/slide11.webp" alt="Joker">
+            <div class="slide-info">
+                <h3>Joker</h3>
+                <p>The dark story of Gotham's infamous villain</p>
+            </div>
+        </div>
+
+
+                <div class="slide">
+            <img src="static/slide12.webp" alt="Joker">
+            <div class="slide-info">
+                <h3>Joker</h3>
+                <p>The dark story of Gotham's infamous villain</p>
+            </div>
+        </div>
+
+
+                <div class="slide">
+            <img src="static/slide13.webp" alt="Joker">
+            <div class="slide-info">
+                <h3>Joker</h3>
+                <p>The dark story of Gotham's infamous villain</p>
+            </div>
+        </div>
+
+                <div class="slide">
+            <img src="static/slide14.webp" alt="Joker">
+            <div class="slide-info">
+                <h3>Joker</h3>
+                <p>The dark story of Gotham's infamous villain</p>
+            </div>
+        </div>
+
+                <div class="slide">
+            <img src="static/slide15.webp" alt="Joker">
+            <div class="slide-info">
+                <h3>Joker</h3>
+                <p>The dark story of Gotham's infamous villain</p>
+            </div>
+        </div>
+
+                <div class="slide">
+            <img src="static/slide16.webp" alt="Joker">
+            <div class="slide-info">
+                <h3>Joker</h3>
+                <p>The dark story of Gotham's infamous villain</p>
+            </div>
+        </div>
+
+                <div class="slide">
+            <img src="static/slide17.webp" alt="Joker">
+            <div class="slide-info">
+                <h3>Joker</h3>
+                <p>The dark story of Gotham's infamous villain</p>
+            </div>
+        </div>
+
+                <div class="slide">
+            <img src="static/slide18.webp" alt="Joker">
+            <div class="slide-info">
+                <h3>Joker</h3>
+                <p>The dark story of Gotham's infamous villain</p>
+            </div>
+        </div>
+
+                <div class="slide">
+            <img src="static/slide19.webp" alt="Joker">
+            <div class="slide-info">
+                <h3>Joker</h3>
+                <p>The dark story of Gotham's infamous villain</p>
+            </div>
+        </div>
+
+                <div class="slide">
+            <img src="static/slide20.webp" alt="Joker">
+            <div class="slide-info">
+                <h3>Joker</h3>
+                <p>The dark story of Gotham's infamous villain</p>
+            </div>
+        </div>
+
+                <div class="slide">
+            <img src="static/slide21.webp" alt="Joker">
+            <div class="slide-info">
+                <h3>Joker</h3>
+                <p>The dark story of Gotham's infamous villain</p>
+            </div>
+        </div>
+
+                <div class="slide">
+            <img src="static/slide22.webp" alt="Joker">
+            <div class="slide-info">
+                <h3>Joker</h3>
+                <p>The dark story of Gotham's infamous villain</p>
+            </div>
+        </div>
+
+                <div class="slide">
+            <img src="static/slide23.webp" alt="Joker">
+            <div class="slide-info">
+                <h3>Joker</h3>
+                <p>The dark story of Gotham's infamous villain</p>
+            </div>
+        </div>
+
+                <div class="slide">
+            <img src="static/slide24.webp" alt="Joker">
+            <div class="slide-info">
+                <h3>Joker</h3>
+                <p>The dark story of Gotham's infamous villain</p>
+            </div>
+        </div>
+
+    </div>
+
+        <!-- ✅ MOVE BUTTONS HERE (outside container) -->
+    <button class="slider-prev" onclick="prevSlide(2)">▲</button>
+    <button class="slider-next" onclick="nextSlide(2)">▼</button>
+
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movie Gallery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h2>📸 Movie Gallery</h2>
+</header>
+
+<section class="gallery-section">
+
+
+
+        <!-- CREW -->
+    <h2 class="section-title">Crew</h2>
+
+    <div class="scroll-wrapper">
+        <button class="scroll-btn left" onclick="scrollLeft('crewScroll')">&#10094;</button>
+<button class="scroll-btn right" onclick="scrollRight('crewScroll')">&#10095;</button>
+<div class="scroll-container" id="crewScroll">
+
+    <div class="gallery-card">
+        <img src="static/actors/dir.webp" alt="Pavan Ganadaran">
+        <h4 class="crew-name">Pavan Ganadaran</h4>
+        <p class="crew-role">Director</p>
+    </div>
+
+    <div class="gallery-card">
+        <img src="static/actors/codir.jpeg" alt="Ganesh">
+        <h4 class="crew-name">Ganesh</h4>
+        <p class="crew-role">Co-Director</p>
+    </div>
+
+    <div class="gallery-card">
+        <img src="static/actors/asst-dir1.jpeg" alt="Mallikarjun">
+        <h4 class="crew-name">Mallikarjun</h4>
+        <p class="crew-role">Assistant Director</p>
+    </div>
+
+    <div class="gallery-card">
+        <img src="static/actors/asst2.jpeg" alt="Prashanth pacche">
+        <h4 class="crew-name">Prashanth pacche</h4>
+        <p class="crew-role">Assistant Director</p>
+    </div>
+
+    <div class="gallery-card">
+        <img src="static/actors/astdir.webp" alt="Pushpalatha">
+        <h4 class="crew-name">Pushpalatha</h4>
+        <p class="crew-role">Associate Director</p>
+    </div>
+
+    <div class="gallery-card">
+        <img src="static/actors/dop.jpeg" alt="Suraj nagananavar">
+        <h4 class="crew-name">Suraj nagananavar</h4>
+        <p class="crew-role">Cinematographer</p>
+    </div>
+
+    <div class="gallery-card">
+        <img src="static/actors/editor.jpeg" alt="Swaraj maharudrayya">
+        <h4 class="crew-name">Swaraj maharudrayya</h4>
+        <p class="crew-role">Editor</p>
+    </div>
+
+    <div class="gallery-card">
+        <img src="static/actors/Costume-designer.webp" alt="Divya Bharathi">
+        <h4 class="crew-name">Divya Bharathi</h4>
+        <p class="crew-role">Costume Designer</p>
+    </div>
+
+    <div class="gallery-card">
+        <img src="static/actors/proman.webp" alt="Suresh">
+        <h4 class="crew-name">Suresh</h4>
+        <p class="crew-role">Production Manager</p>
+    </div>
+
+    <div class="gallery-card">
+        <img src="static/actors/digitalmanager.jpg" alt="Vinay mahadev">
+        <h4 class="crew-name">Vinay mahadev</h4>
+        <p class="crew-role">Digital Marketing</p>
+    </div>
+
+    
+    <!-- 🔥 MORE CARD -->
+    <div class="gallery-card more-card">
+        <div class="more-content">
+            <span>+12</span>
+            <p>More</p>
+        </div>
+    </div>
+
+</div>
+
+        <button class="scroll-btn right" onclick="scrollRight('crewScroll')">&#10095;</button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- CAST -->
+    <h2 class="section-title">Cast</h2>
+
+    <div class="scroll-wrapper">
+        <button class="scroll-btn left" onclick="scrollLeft('castScroll')">&#10094;</button>
+
+<div class="scroll-container" id="castScroll">
+
+    <div class="gallery-card">
+        <img src="static/actors/hero.webp" alt="Hero">
+        <h4 class="crew-name">Aviltej</h4>
+        <p class="crew-role">as Lokhi</p>
+    </div>
+
+    <div class="gallery-card">
+        <img src="static/actors/heroine.webp" alt="Heroine">
+        <h4 class="crew-name">Divya</h4>
+        <p class="crew-role">as Pranathi</p>
+    </div>
+
+    <div class="gallery-card">
+        <img src="static/actors/balrajwadi.webp" alt="Actor">
+        <h4 class="crew-name">karthik-huli</h4>
+        <p class="crew-role">Supporting Role</p>
+    </div>
+
+    <div class="gallery-card">
+        <img src="static/actors/vijay-chandur.webp" alt="Actor">
+        <h4 class="crew-name">Chandan-chini</h4>
+        <p class="crew-role">Supporting Role</p>
+    </div>
+
+    <div class="gallery-card">
+        <img src="static/actors/muni.webp" alt="Actor">
+        <h4 class="crew-name">Parvathi</h4>
+        <p class="crew-role">Character Role</p>
+    </div>
+
+
+
+    <!-- 🔥 MORE CARD -->
+    <div class="gallery-card more-card">
+        <div class="more-content">
+            <span>+12</span>
+            <p>More</p>
+        </div>
+    </div>
+
+</div>
+
+        <button class="scroll-btn right" onclick="scrollRight('castScroll')">&#10095;</button>
+    </div>
+
+
+
+</section>
+
+<script>
+function scrollLeft(id) {
+    const container = document.getElementById(id);
+    const scrollAmount = container.clientWidth * 0.8;
+
+    container.scrollTo({
+        left: Math.max(0, container.scrollLeft - scrollAmount),
+        behavior: "smooth"
+    });
+}
+
+function scrollRight(id) {
+    const container = document.getElementById(id);
+    const scrollAmount = container.clientWidth * 0.8;
+
+    container.scrollTo({
+        left: container.scrollLeft + scrollAmount,
+        behavior: "smooth"
+    });
+}
+</script>
+</body>
+</html>
